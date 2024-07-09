@@ -38,7 +38,7 @@ const Product = ({product}) => {
         <NavBar/>
         </div>
 
-        <div className="bg-gray-100 dark:bg-gray-800 py-[120px]">
+        <div className="bg-gray-100 dark:bg-gray-800 py-[120px] h-screen">
     <div className="max-w-6xl mx-auto px-4 sm:px-2 lg:px-1">
         <div className="flex flex-col md:flex-row -mx-4">
             <div className="md:flex-1 px-4">
