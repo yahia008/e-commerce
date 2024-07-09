@@ -63,7 +63,7 @@ const Card = () => {
           <div className="flex flex-col p-5 w-[300px] ml-auto mr-auto mt-[60px] rounded shadow " key={product.id}>
           <div className="product-image">
 
-            <Image src={product.image} className='w-[100%] h-[200px] rounded-sm' width={300} height={150} alt="Product Image" />
+            <img src={product.image} className='w-[100%] h-[200px] rounded-sm' width={300} height={150} alt="Product Image" />
           </div>
           <div className="p">
             <h2 className="text-center">Awesome</h2>

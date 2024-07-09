@@ -45,7 +45,7 @@ const Cart = () => {
               <div key={item.id} className='mb-4 p-2 flex justify-between items-center border-b'>
                 
                 <div className='w-[100px] flex items-center ml-3'>
-                  <Image className='w-full ' src={item.image} width={300} height={200} alt='image'/>
+                  <img className='w-full ' src={item.image} width={300} height={200} alt='image'/>
                   <div className="flex items-center ml-7  p-3">
                   <button 
                   onClick={()=>dispatch(decrement({ id: item.id, price: item.price }))}
