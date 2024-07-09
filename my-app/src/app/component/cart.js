@@ -44,19 +44,19 @@ const Cart = () => {
             data.map((item)=> (
               <div key={item.id} className='mb-4 p-2 flex justify-between items-center border-b'>
                 
-                <div className='w-[100px] flex flex-col sm:flex-row items-center ml-3'>
+                <div className=' w-[70px] sm:w-[100px] flex flex-col  sm:flex-row items-center sm:ml-3'>
                   <img className='w-full ' src={item.image} width={300} height={200} alt='image'/>
                   <div className="flex items-center ml-7  p-3">
                   <button 
                   onClick={()=>dispatch(decrement({ id: item.id, price: item.price }))}
-                  className='text-xl font-bold text-white p-2 mr-3 bg-black rounded'>-</button><p>{item.qty}</p><button onClick={()=>dispatch(increment({ id: item.id, price: item.price }))} className='text-xl font-bold bg-black p-2 ml-3 text-white rounded'>+</button>
+                  className='text-sm sm:text-xl font-bold text-white p-2 mr-3 bg-black rounded'>-</button><p className='text-sm sm:text-base'>{item.qty}</p><button onClick={()=>dispatch(increment({ id: item.id, price: item.price }))} className='text-sm sm:text-xl font-bold bg-black p-2 ml-3 text-white rounded'>+</button>
          
                     </div>
                 </div>
 
                 <div className='flex mr-10 items-center'>
-                  <p className='text-xl mr-10 font-bold'>{formatPrice(item.price)}</p>
-                  <div className='bg-red-600 rounded  text-white p-3 font-bold' onClick={()=>dispatch(removeItem(item.id))}>delete</div>
+                  <p className='text-sm sm:text-sl   sm:mr-10 font-bold'>{formatPrice(item.price)}</p>
+                  <div className='bg-red-600 rounded text-sm text-white p-3 font-bold' onClick={()=>dispatch(removeItem(item.id))}>delete</div>
                 </div>
 
 
