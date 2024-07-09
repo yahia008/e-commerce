@@ -54,8 +54,8 @@ const Cart = () => {
                     </div>
                 </div>
 
-                <div className='flex mr-10 items-center'>
-                  <p className='text-sm sm:text-sl   sm:mr-10 font-bold'>{formatPrice(item.price)}</p>
+                <div className='flex mr-5 sm:mr-10 items-center'>
+                  <p className='text-sm sm:text-xl  mr-10 font-bold'>{formatPrice(item.price)}</p>
                   <div className='bg-red-600 rounded text-sm text-white p-3 font-bold' onClick={()=>dispatch(removeItem(item.id))}>delete</div>
                 </div>
 
