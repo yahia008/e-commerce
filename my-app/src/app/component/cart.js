@@ -33,7 +33,7 @@ const Cart = () => {
   return (
     <div className='bg-gray-200 py-[100px] h-screen w-full'>
 
-      <div className='bg-white  rounded overflow-y-auto mt-7 p-5 h-full'>
+      <div className='bg-white w-full rounded overflow-y-auto mt-7 p-5 h-full'> 
        <div className='p-3 shadow border-b border-black mb-4 text-xl font-bold'>
         <h2>Cart</h2>
         
@@ -44,7 +44,7 @@ const Cart = () => {
             data.map((item)=> (
               <div key={item.id} className='mb-4 p-2 flex justify-between items-center border-b'>
                 
-                <div className='w-[100px] flex items-center ml-3'>
+                <div className='w-[100px] flex flex-col sm:flex-row items-center ml-3'>
                   <img className='w-full ' src={item.image} width={300} height={200} alt='image'/>
                   <div className="flex items-center ml-7  p-3">
                   <button 

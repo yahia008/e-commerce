@@ -20,8 +20,8 @@ const NavBar = () => {
 
   return (
     <div className='bg-black flex justify-between items-center fixed z-10 h-24 w-full mx-auto px-4 text-white mb-[350px]'>
-      <div className='flex items-center ml-10'>
-      <h1 className=' text-3xl font-bold text-[#00df9a]'>BIBAT</h1> 
+      <div className='flex items-center ml-6'>
+      <h1 className=' text-xl sm:text-3xl font-bold text-[#00df9a]'>BIBAT</h1> 
       
       
       </div>
