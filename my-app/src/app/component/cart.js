@@ -48,7 +48,7 @@ const Cart = () => {
                   <img className='w-full ' src={item.image} width={300} height={200} alt='image'/>
                   <div className="flex items-center ml-7  p-3">
                   <button 
-                  onClick={()=>dispatch(decrement({ id: item.id, price: item.price }))}
+                  onClick={()=>dispatch(decrement({ id: item.id, price: item.price, qty:item.qty }))}
                   className='text-sm sm:text-xl font-bold text-white p-2 mr-3 bg-black rounded'>-</button><p className='text-sm sm:text-base'>{item.qty}</p><button onClick={()=>dispatch(increment({ id: item.id, price: item.price }))} className='text-sm sm:text-xl font-bold bg-black p-2 ml-3 text-white rounded'>+</button>
          
                     </div>
